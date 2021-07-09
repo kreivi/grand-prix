@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game/assets/race.glb" type="PackedScene" id=1]
+[ext_resource path="res://game/entities/race/race.gd" type="Script" id=2]
+
+[node name="race" instance=ExtResource( 1 )]
+mass = 58.6735
+script = ExtResource( 2 )
+
+[node name="vehicle_wheel_backLeft" parent="." index="2"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.35, 0.228, 0.88 )
+use_as_traction = true
+wheel_rest_length = 0.07
+suspension_travel = 0.07
+suspension_stiffness = 140.0
+damping_compression = 0.5
+damping_relaxation = 0.8
+
+[node name="vehicle_wheel_backRight" parent="." index="3"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.35, 0.228, 0.88 )
+use_as_traction = true
+wheel_rest_length = 0.07
+suspension_travel = 0.07
+suspension_stiffness = 140.0
+damping_compression = 0.5
+damping_relaxation = 0.8
+
+[node name="vehicle_wheel_frontLeft" parent="." index="4"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.35, 0.227543, -0.639886 )
+use_as_steering = true
+wheel_rest_length = 0.07
+suspension_travel = 0.07
+suspension_stiffness = 140.0
+damping_compression = 0.5
+damping_relaxation = 0.8
+
+[node name="vehicle_wheel_frontRight" parent="." index="5"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.35, 0.228, -0.64 )
+use_as_steering = true
+wheel_rest_length = 0.07
+suspension_travel = 0.07
+suspension_stiffness = 140.0
+damping_compression = 0.5
+damping_relaxation = 0.8

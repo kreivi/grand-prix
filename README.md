@@ -1,6 +1,10 @@
 # Grand Prix
 Arcade racing game
 
+## Prerequisites
+
+* [Godot Engine](https://godotengine.org/) [version 3.3.2-stable](https://downloads.tuxfamily.org/godotengine/3.3.2/)
+
 ## Resources
 
 |Name|Author|License

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game/entities/race/race.tscn" type="PackedScene" id=1]
+
+[sub_resource type="PlaneMesh" id=1]
+size = Vector2( 40, 40 )
+
+[node name="TestRaceCar" type="Spatial"]
+
+[node name="Floor" type="CSGMesh" parent="."]
+use_collision = true
+mesh = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.91653, 0.399965, 0, -0.399965, 0.91653, 0, 10.2284, 19.3072 )
+
+[node name="race" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 0, 0, 0 )
