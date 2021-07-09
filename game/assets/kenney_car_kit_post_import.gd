@@ -56,7 +56,6 @@ func add_body_collision(scene: Spatial) -> void:
 func add_vehicle_wheels(scene: Spatial) -> void:
   var car_root: Spatial = _get_car_root(scene)
   var car_body: Spatial = car_root.get_node(BODY_NAME)
-  var wheels: Array = []
   for c in car_root.get_children():
     c = c as MeshInstance
     if c.name.begins_with(WHEEL_NAME_PREFIX):
