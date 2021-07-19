@@ -29,6 +29,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://game/entities/cars/car.gd"
 }, {
+"base": "GdUnitTestSuite",
+"class": "CarTest",
+"language": "GDScript",
+"path": "res://test/game/entities/cars/car_test.gd"
+}, {
 "base": "GdUnitArgumentMatcher",
 "class": "ChainedArgumentMatcher",
 "language": "GDScript",
@@ -494,6 +499,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/gdUnit3/src/core/LocalTime.gd"
 }, {
+"base": "RaceCar",
+"class": "PlayerCar",
+"language": "GDScript",
+"path": "res://game/entities/cars/player/player_car.gd"
+}, {
 "base": "GdUnitMonitor",
 "class": "PushErrorMonitor",
 "language": "GDScript",
@@ -534,10 +544,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/gdUnit3/src/network/rpc/RPCMessage.gd"
 }, {
-"base": "VehicleBody",
-"class": "Race",
+"base": "Car",
+"class": "RaceCar",
 "language": "GDScript",
-"path": "res://game/entities/race/race.gd"
+"path": "res://game/entities/cars/race_car/race_car.gd"
 }, {
 "base": "Reference",
 "class": "Result",
@@ -589,6 +599,7 @@ _global_script_class_icons={
 "AnyBuildInTypeArgumentMatcher": "",
 "AnyClazzArgumentMatcher": "",
 "Car": "",
+"CarTest": "",
 "ChainedArgumentMatcher": "",
 "CmdArgumentParser": "",
 "CmdCommand": "",
@@ -682,6 +693,7 @@ _global_script_class_icons={
 "IntFuzzer": "",
 "KenneyCarKitPostImport": "",
 "LocalTime": "",
+"PlayerCar": "",
 "PushErrorMonitor": "",
 "RPC": "",
 "RPCClientConnect": "",
@@ -690,7 +702,7 @@ _global_script_class_icons={
 "RPCGdUnitEvent": "",
 "RPCGdUnitTestSuite": "",
 "RPCMessage": "",
-"Race": "",
+"RaceCar": "",
 "Result": "",
 "SignalHandler": "",
 "StringFuzzer": "",

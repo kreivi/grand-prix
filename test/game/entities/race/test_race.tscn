@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://game/entities/race/race.tscn" type="PackedScene" id=1]
+[ext_resource path="res://game/entities/cars/race_car/race_car.tscn" type="PackedScene" id=1]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 40, 40 )

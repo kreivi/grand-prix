@@ -68,3 +68,6 @@ func test_add_steering_input() -> void:
     )
   pass
 
+
+func test_throttle_input_accelerates() -> void:
+  pass
